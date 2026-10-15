@@ -4,10 +4,30 @@ header {
     background-color: rgb(39, 42, 40);
 }
 
+body {
+    margin: 0;
+    background-color: #dee2ca;   /* cream page background */
+    color: #082114;              /* default text colour */
+    min-height: 100vh;
+}
+
+
+
 nav a {
     margin: 0 30px;
     color: rgb(148, 174, 159);
     text-decoration: none;
+}
+
+/*#Programmes p {
+    color: #4c5c3c;  
+}---*/
+
+
+#Programmes {
+    min-height: 0;   /* removes the forced 500px height */
+    padding: 0;
+    background-color: #c4c2b7;
 }
 .pic {
     width: 400px;
@@ -32,14 +52,112 @@ section {
     padding: 40px;
     text-align: center;
 }
-#vision {
-    background-color: rgb(229, 236, 233);
+
+
+p:not(footer p) {
+    color: #233327;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-#mission {
-    background-color: rgb(215, 228, 222);
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 8px;
+    background: #cfd8d1;
+    border: 1px solid #0c2704;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
 }
 
-#goals {
-    background-color: rgb(192, 204, 195);
+.search-container input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+.search-container button {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #fdfffd;
+    color: rgb(17, 63, 20);
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.search-container button:hover {
+    background: #213326;
+}
+
+#searchResults {
+    max-width: 650px;
+    margin: 10px auto;
+}
+
+
+/* Programmes Hero Section */
+
+.programmes-hero .eyebrow {
+    color: #1f1c0f;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.programmes-hero h1 {
+    color: #052509;
+    font-size: 42px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+.programmes-hero h3{
+    color: #96a898;
+}
+
+.programmes-hero p {
+    color: #2f432c;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+#Programmes {
+    padding: 0;          /* removes the side gap from the section */
+    min-height: 0;
+}
+
+.programmes-hero {
+    background: linear-gradient(135deg, #405246, #586e59);
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 40px 30px;
+    box-sizing: border-box;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .programmes-hero {
+        padding: 45px 20px;
+        margin: 20px 12px;
+    }
+
+    .programmes-hero h1 {
+        font-size: 30px;
+    }
+
+    .programmes-hero p {
+        font-size: 15px;
+    }
 }
