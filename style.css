@@ -1,45 +1,160 @@
+/* ---------- Base ---------- */
+html {
+    scroll-behavior: smooth;
+}
+ 
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+}
+ 
+/* ---------- Header and navigation ---------- */
 header {
     text-align: center;
     padding: 20px;
     background-color: rgb(39, 42, 40);
 }
-
+ 
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 0;
+}
+ 
 nav a {
     margin: 0 30px;
     color: rgb(148, 174, 159);
     text-decoration: none;
 }
-.pic {
-    width: 400px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
+ 
+nav a:hover,
+nav a:focus-visible {
+    color: rgb(192, 204, 195);
+    text-decoration: underline;
 }
-footer{
-    text-align: center;
-    padding:20px;
-    color:rgb(61, 97, 32);
-    background-color: rgb(39,42,40)
-}
-footer h2,p{
-    color:rgb(148, 174, 159)
-}
-html{
-    scroll-behavior: smooth;
-}
+ 
+/* ---------- Sections (shared) ---------- */
 section {
-    min-height: 500px;
+    min-height: 320px;
     padding: 40px;
     text-align: center;
 }
+ 
+/* ---------- Hero: logo on the left, text on the right ---------- */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    min-height: 420px;
+    padding: 60px 8%;
+    box-sizing: border-box;
+    background:  linear-gradient(135deg, #405246, #586e59);
+    ;
+}
+
+
+.pic {
+    width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    border: 5px solid rgb(19, 77, 85);
+}
+
+ 
+
+.home-text {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 640px;
+    text-align: center;
+}
+
+.home-text h1 {
+    color: rgb(19, 37, 4);
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.home-text p {
+    color: rgb(176, 189, 92);
+    line-height: 1.6;
+}
+
+ 
+/* ---------- Vision, mission, goals ---------- */
 #vision {
-    background-color: rgb(229, 236, 233);
+    background-color: rgb(132, 158, 132);
 }
-
+ 
 #mission {
-    background-color: rgb(215, 228, 222);
+    background-color: rgb(103, 116, 91);
+}
+ 
+#goals {
+    background-color: rgb(66, 90, 66);
+}
+ 
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(39, 42, 40);
+}
+ 
+footer h2,
+footer p {
+    color: rgb(148, 174, 159);
+}
+ 
+/* ---------- Phones: logo on top, text below ---------- */
+@media (max-width: 700px) {
+    #home {
+        flex-direction: column;
+        gap: 32px;
+        padding: 50px 6%;
+    }
+ 
+    .pic {
+        width: 190px;
+        height: 190px;
+        padding: 22px;
+    }
+ 
+    .home-text h1 {
+        font-size: 2rem;
+    }
+ 
+    nav a {
+        margin: 0 14px;
+    }
+}
+#home .home-text {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: static !important;
+    width: 100%;
+    max-width: 640px;
+    height: auto !important;
+    overflow: visible !important;
+    color: white !important;
+    text-align: center;
 }
 
-#goals {
-    background-color: rgb(192, 204, 195);
-}
+
+
