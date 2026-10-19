@@ -9,6 +9,58 @@ header {
     display: block;
     margin: 7px auto;
 }
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    min-height: 420px;
+    padding: 60px 8%;
+    box-sizing: border-box;
+    background:  linear-gradient(135deg, #405246, #586e59);
+    ;
+}
+
+
+.pic {
+    width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    border: 5px solid rgb(19, 77, 85);
+}
+
+ 
+
+.home-text {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 640px;
+    text-align: center;
+}
+
+.home-text h1 {
+    color: rgb(19, 37, 4);
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.home-text p {
+    color: rgb(176, 189, 92);
+    line-height: 1.6;
+}
+
 nav a {
     margin: 0 30px;
     color: rgb(148, 174, 159);
@@ -26,10 +78,11 @@ footer h2,p{
 html{
     scroll-behavior: smooth;
 }
-section {
+section  {
     min-height: 500px;
     padding: 40px;
   background-color: rgb(229, 236, 233);
+  
 }
 button {
     background-color: rgb(58, 78, 66);
@@ -44,20 +97,49 @@ form label {
     margin-top: 15px;
     margin-bottom: 5px;
 }
-footer h2,p{
-    color:rgb(148, 174, 159)
-}
+
 form input {
     padding: 10px;
     width: 250px;
 }
-main h1{
+
+
+
+#reg {
+    min-height: 500px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
-    color: rgb(76, 116, 87);
+    background: #c4c2b7;
 }
-main {
-    text-align:center
+
+#reg h1 {
+    text-decoration: solid;
+    color: #000000;
+    margin-bottom: 15px;
 }
-p {
-    color:rgb(35, 59, 39);
+
+#reg p {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+#reg label {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+#reg select {
+    width: 260px;
+    padding: 12px;
+    border: 1px solid #fff1e4;
+    border-radius: 8px;
+    background-color: #fcffe8;
+    color: #443c31;
 }

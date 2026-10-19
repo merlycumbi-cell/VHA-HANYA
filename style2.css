@@ -3,6 +3,40 @@ header {
     padding: 20px;
     background-color: rgb(39, 42, 40);
 }
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    min-height: 300px;
+    padding: 60px 8%;
+    box-sizing: border-box;
+    background:  linear-gradient(135deg, #405246, #586e59);
+    ;
+}
+
+.home-text {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 640px;
+    text-align: center;
+}
+
+.home-text h1 {
+    color: rgb(19, 37, 4);
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.home-text p {
+    color: rgb(176, 189, 92);
+    line-height: 1.6;
+}
 
 nav a {
     margin: 0 30px;
@@ -24,15 +58,30 @@ html{
 section {
     min-height: 500px;
     padding: 40px;
-  background-color: rgb(229, 236, 233);
+  background-color:#c4c2b7;
 }
+section p{
+    color: #9a7958;
+}
+section a{
+    color: #9a7958;
+    text-decoration: none; 
+}
+
 main h1{
     text-align:center;
 }
+
 button {
-    background-color: rgb(58, 78, 66);
-    color:rgb(39,42,40)
+    background-color: rgb(47, 81, 60);
+    color: rgb(245, 253, 195);
+    width: 200px;
+    height: 40px;
+    border: 1px solid #b2eec7;
+    border-radius: 8px;
+    cursor: pointer;
 }
+
 form {
     text-align: center;
 }
@@ -46,4 +95,7 @@ form label {
 form input {
     padding: 10px;
     width: 250px;
+    background-color: #fffef0;
+    border-radius: 0.5cap;
+    border-color: #b6ea9b;
 }
