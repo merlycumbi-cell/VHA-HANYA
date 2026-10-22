@@ -8,13 +8,15 @@
 
     <link rel="icon" type="image/png" href="./VHA-HANYA.png?v=2">
     <link rel="stylesheet" href="HealthEducation.css">
+    <!-- Inside HealthEducation.html, right before </body> -->
+
 </head>
 
 <body>
 
     <header>
 
-        <nav>
+        <nav class="main-nav">
             <a href="index.html">Home</a>
             <a href="Patient.html">Patient</a>
             <a href="HealthCare.html">HealthCare Facility</a>
@@ -27,176 +29,1423 @@
     </header>
     <main>
 
-        <section id="Programmes">
+        <section id="Education">
 
             <div class="programmes-hero">
-                <p class="eyebrow">OUR PROGRAMMES</p>
+                <p class="eyebrow">HEALTH EDUCATION</p>
 
-                <h1>Health Programmes for a Stronger Community</h1>
+                <h1>LEARN - PROTECT - THRIVE</h1>
+
+                <p>Simple, trusted health information for you and your community.</p>
+                <nav class="topic-nav">
+                    <a href="#MentalHealth">Mental Health</a>
+                    <a href="#Medication">Medication Education</a>
+                    <a href="#Aid">First Aid</a>
+                    <a href="#Hygiene">Hygiene and Disease Prevention</a>
+                    <a href="#Nutrition">Nutrition</a>
+                    <a href="#Agieng">Health Agieng</a>
+                    <a href="#Maternal">Maternal</a>
+                    <a href="#Chronic">Chronic</a>
+                    <a href="#Hiv">Hiv</a>
+                    <a href="#Immunisation">Immunisation</a>
+                </nav>
+            </div>
+        </section>
+
+        <section id="MentalHealth">
+            <h1>MENTAL HEALTH</h1>
+            <img src="Brain green.jpeg" alt="VHA-HANYA Logo" class="brain">
+
+            <div class="mental-health-content">
+                <h2>Your Mental Health Matters</h2>
 
                 <p>
-                    Discover healthcare programmes designed to educate,
-                    support and empower individuals and communities
-                    to live healthier lives.
-                </p>
-            </div>
-            
-        <div class="search-container">
-            <input
-                type="search"
-                id="siteSearch"
-                placeholder="Search healthcare information..."
-                aria-label="Search VHA-HANYA"
-                >
-            <button type="button" onclick="searchWebsite()"><span>⌕</span> Search</button>
-        </div>
-
-        <div id="searchResults"></div>
-
-            <div class="programmes-container">
-
-                <h2>Explore Our Programmes</h2>
-
-                <p class="section-description">
-                    Find health information, community initiatives
-                    and support programmes that matter to you.
+                    Mental health is an important part of your overall
+                    wellbeing. It affects how you think, feel, cope with
+                    challenges and connect with others.
                 </p>
 
-                <div class="programmes-grid">
-                    <!--Mental Health-->
-                    <article class="programme-card">
-                        <div class="programme-icon">♡</div>
-                        <h3>Mental Health</h3>
-                        <p>
-                            Learn about emotional well-being, stress,
-                            anxiety and where to find support.
-                        </p>
-                        <a href="HealthEducation.html">Learn more →</a>
-                    </article>
-
-                    <!-- First Aid -->
-                    <article class="programme-card">
-                        <div class="programme-icon">✚</div>
-                        <h3>First Aid & Emergency Preparedness</h3>
-                        <p>
-                            Learn basic first aid, how to respond to common
-                            emergencies and where to access emergency assistance.
-                        </p>
-                        <a href="HealthEducation.html">Learn more →</a>
-                    </article>
-
-                    <!-- Medication Education -->
-                    <article class="programme-card">
-                        <div class="programme-icon">＋</div>
-                        <h3>Medication Education</h3>
-                        <p>
-                            Understand prescriptions, safe medication use,
-                            treatment adherence and the importance of following
-                            professional medical advice.
-                        </p>
-                        <a href="HealthEducation.html">Learn more →</a>
-                    </article>
-
-                    <!-- Hygiene -->
-                    <article class="programme-card">
-                        <div class="programme-icon">✧</div>
-                        <h3>Hygiene & Disease Prevention</h3>
-                        <p>
-                            Explore handwashing, oral hygiene, sanitation
-                            and everyday practices that help prevent infections.
-                        </p>
-                        <a href="HealthEducation.html">Learn more →</a>
-                    </article>
-
-                    <!-- Nutrition -->
-                    <article class="programme-card">
-                        <div class="programme-icon">❋</div>
-                        <h3>Nutrition & Healthy Living</h3>
-                        <p>
-                            Discover balanced eating, healthy lifestyle habits
-                            and practical nutrition tips for the whole family.
-                        </p>
-                        <a href="HealthEducation.html">Learn more →</a>
-                    </article>
-
-                    <!-- Elderly Health -->
-                    <article class="programme-card">
-                        <div class="programme-icon">♡</div>
-                        <h3>Elderly Health & Healthy Ageing</h3>
-                        <p>
-                            Promote healthy ageing through regular check-ups,
-                            fall prevention, medication support and caregiver education.
-                        </p>
-                        <a href="HealthEducation.html">Learn more →</a>
-                    </article>
-                    <!--Meaternal and  Child health-->
-                    <article class="programme-card">
-                        <div class="programme-icon">✚</div>
-                        <h3>Maternal & Child Health</h3>
-                        <p>
-                            Explore pregnancy care, child development,
-                            antenatal visits and postnatal support.
-                        </p>
-                        <a href="HealthEducation.html">Learn more →</a>
-                    </article>
-                    <!--Chronic Disease Care-->
-                    <article class="programme-card">
-                        <div class="programme-icon">+</div>
-                        <h3>Chronic Disease Care</h3>
-                        <p>
-                            Understand diabetes, hypertension and the
-                            importance of regular health check-ups.
-                        </p>
-                        <a href="HealthEducation.html">Learn more →</a>
-                    </article>
-                    <!--HIV & Sexual Health-->
-                    <article class="programme-card">
-                        <div class="programme-icon">♡</div>
-                        <h3>HIV & Sexual Health</h3>
-                        <p>
-                            Access information about prevention,
-                            testing, treatment and sexual health.
-                        </p>
-                        <a href="HealthEducation.html">Learn more →</a>
-                    </article>
-                    <!--Immunization-->
-                    <article class="programme-card">
-                        <div class="programme-icon">✳</div>
-                        <h3>Immunisation</h3>
-                        <p>
-                            Learn about vaccinations and how they help
-                            protect individuals and communities.
-                        </p>
-                        <a href="HealthEducation.html">Learn more →</a>
-                    </article>
-                    <!--Community Outreach-->
-                    <article class="programme-card">
-                        <div class="programme-icon">♡</div>
-                        <h3>Community Outreach</h3>
-                        <p>
-                            Discover community health campaigns,
-                            screening events and wellness initiatives.
-                        </p>
-                        <a href="HealthEducation.html">Learn more →</a>
-                    </article>
-
-                </div>
-            </div>
-
-            <div class="programme-cta">
-                <h2>A Healthier Community Starts With Us</h2>
                 <p>
-                    Explore health resources and discover ways to
-                    take an active role in your well-being.
+                    Everyone experiences difficult moments. Seeking help,
+                    talking to someone you trust and practising self-care
+                    can help you take steps towards better wellbeing.
                 </p>
-                <a href="HealthEducation.html" class="cta-button">
-                    Explore Health Education
+
+                <h3>How Can You Care for Your Mental Health?</h3>
+
+                <ul>
+                    <li>Make time for rest and relaxation.</li>
+                    <li>Talk about your feelings with someone you trust.</li>
+                    <li>Stay connected with supportive people.</li>
+                    <li>Maintain healthy sleep and physical activity habits.</li>
+                    <li>Seek professional help when you need it.</li>
+                </ul>
+
+                <h3>Remember</h3>
+                <p>
+                    You are not alone. Your mental health matters,
+                    and support is available.
+                </p>
+                <p>
+                    Learn about mental health, emotional well-being,
+                    stress, anxiety and depression.
+                </p>
+                <a href="https://www.sadag.org/" target="_blank" rel="noopener noreferrer">
+                    Explore Mental Health Resources
                 </a>
             </div>
 
         </section>
 
+        <section id="Medication">
+            <h1>MEDICATION EDUCATION</h1>
+            <img src="Medication and Treatment Education.jpeg" alt="VHA-HANYA Logo" class="Medication">
 
+            <div class="mental-health-content">
+                <h2>Your Mental Health Matters</h2>
+
+                <p>
+                    Mental health is an important part of your overall
+                    wellbeing. It affects how you think, feel, cope with
+                    challenges and connect with others.
+                </p>
+
+                <p>
+                    Everyone experiences difficult moments. Seeking help,
+                    talking to someone you trust and practising self-care
+                    can help you take steps towards better wellbeing.
+                </p>
+
+                <h3>How Can You Care for Your Mental Health?</h3>
+
+                <ul>
+                    <li>Make time for rest and relaxation.</li>
+                    <li>Talk about your feelings with someone you trust.</li>
+                    <li>Stay connected with supportive people.</li>
+                    <li>Maintain healthy sleep and physical activity habits.</li>
+                    <li>Seek professional help when you need it.</li>
+                </ul>
+
+                <h3>Remember</h3>
+                <p>
+                    You are not alone. Your mental health matters,
+                    and support is available.
+                </p>
+                <p>
+                    For reliable information about medicines and health products, visit
+                    <a href="https://www.sahpra.org.za/" target="_blank" rel="noopener noreferrer">
+                        SAHPRA
+                    </a>.
+                </p>
+
+            </div>
+        </section>
+
+        <section id="Aid">
+            <h1>FIRST AID</h1>
+            <img src="FAid.jpeg" alt="VHA-HANYA Logo" class="aid">
+            <p>
+                First aid is the immediate assistance given to someone
+                who is injured or suddenly becomes ill before professional
+                medical help arrives. Knowing basic first aid can save
+                lives, prevent injuries from becoming worse, and provide
+                comfort during emergencies.
+            </p>
+
+            <h2>Why is First Aid Important?</h2>
+
+            <ul>
+                <li>
+                    <strong>Saves lives:</strong>
+                    Quick action can help someone survive a medical emergency.
+                </li>
+
+                <li>
+                    <strong>Prevents further harm:</strong>
+                    Proper first aid can reduce the risk of an injury
+                    becoming more serious.
+                </li>
+
+                <li>
+                    <strong>Provides reassurance:</strong>
+                    Staying calm and comforting an injured person can
+                    help reduce panic.
+                </li>
+
+                <li>
+                    <strong>Promotes safety:</strong>
+                    Learning first aid prepares people to respond to
+                    accidents at home, school, work, or in public.
+                </li>
+            </ul>
+
+            <h2>Basic First Aid Tips</h2>
+
+            <ol>
+                <li>Check that the scene is safe before approaching.</li>
+
+                <li>
+                    Check whether the person responds and is breathing normally.
+                </li>
+
+                <li>Call emergency services when necessary.</li>
+
+                <li>
+                    For severe bleeding, apply firm, direct pressure
+                    with a clean dressing.
+                </li>
+
+                <li>
+                    If someone is unresponsive and not breathing normally,
+                    call for emergency help and begin CPR if you can,
+                    following the emergency operator's instructions.
+                </li>
+
+                <li>
+                    Do not move someone with a suspected serious neck
+                    or spinal injury unless there is immediate danger.
+                </li>
+            </ol>
+
+            <p>
+                <strong>Remember:</strong>
+                First aid does not replace professional medical treatment.
+                When an emergency occurs, seek appropriate medical assistance.
+            </p>
+
+            <h2>Learn More About First Aid</h2>
+
+            <p>
+                Visit the South African Red Cross Society for first aid
+                training and educational resources.
+            </p>
+
+            <a href="https://redcross.org.za/service/training-and-skills-development/" target="_blank"
+                rel="noopener noreferrer">
+                Explore First Aid Resources
+            </a>
+        </section>
+
+        <section id="Hygiene">
+            <h1>HYGIENE & DISEASE PREVENTION</h1>
+            <img src="Hygiene and Disease Prevention.jpeg" alt="VHA-HANYA Logo" class="Hygiene">
+            <p>
+                Hygiene and disease prevention involve practising healthy
+                habits to maintain cleanliness, prevent infections, and
+                protect ourselves and others from illness. Good hygiene
+                helps reduce the spread of harmful germs in our homes,
+                schools, workplaces, and communities.
+            </p>
+
+            <h2>Why Are Hygiene and Disease Prevention Important?</h2>
+
+            <ul>
+                <li>
+                    <strong>Prevents infections:</strong>
+                    Proper hygiene reduces exposure to germs that cause
+                    illnesses such as diarrhoeal diseases and respiratory
+                    infections.
+                </li>
+
+                <li>
+                    <strong>Protects the community:</strong>
+                    Healthy habits help reduce the spread of infectious
+                    diseases between people.
+                </li>
+
+                <li>
+                    <strong>Promotes food safety:</strong>
+                    Clean hands, safe drinking water, and proper food
+                    handling help prevent foodborne illnesses.
+                </li>
+
+                <li>
+                    <strong>Improves overall health:</strong>
+                    Good hygiene supports personal well-being and
+                    contributes to a healthier environment.
+                </li>
+            </ul>
+
+            <h2>Essential Hygiene Practices</h2>
+
+            <ol>
+                <li>
+                    <strong>Handwashing:</strong>
+                    Wash your hands with soap and clean water before
+                    handling food, before eating, after using the toilet,
+                    and after coughing, sneezing, or touching waste.
+                </li>
+
+                <li>
+                    <strong>Personal cleanliness:</strong>
+                    Bathe regularly, wear clean clothes, and maintain
+                    good oral hygiene by brushing your teeth twice daily.
+                </li>
+
+                <li>
+                    <strong>Safe drinking water:</strong>
+                    Use water from a safe source. If the water may be
+                    contaminated, follow local health guidance on making
+                    it safe to drink.
+                </li>
+
+                <li>
+                    <strong>Food hygiene:</strong>
+                    Wash produce with safe water, cook food thoroughly,
+                    separate raw and cooked foods, and store food safely.
+                </li>
+
+                <li>
+                    <strong>Respiratory hygiene:</strong>
+                    Cover your mouth and nose when coughing or sneezing,
+                    dispose of tissues properly, and clean your hands.
+                </li>
+
+                <li>
+                    <strong>Environmental cleanliness:</strong>
+                    Dispose of waste correctly, clean frequently touched
+                    surfaces, and keep surroundings free from rubbish
+                    and standing water where mosquitoes can breed.
+                </li>
+
+                <li>
+                    <strong>Vaccination:</strong>
+                    Keep vaccinations up to date according to recommended
+                    schedules to help protect against preventable diseases.
+                </li>
+            </ol>
+
+            <h2>How Can We Prevent the Spread of Diseases?</h2>
+
+            <p>
+                Disease prevention requires individual and community
+                effort. Practise good hygiene, avoid sharing personal
+                items such as toothbrushes, follow recommended vaccination
+                schedules, and seek medical advice when symptoms are
+                severe, persistent, or concerning.
+            </p>
+
+            <p>
+                Antibiotics should only be used when prescribed by an
+                appropriate healthcare professional. They do not treat
+                viral infections such as the common cold or flu.
+            </p>
+
+            <h2>When Should You Seek Medical Help?</h2>
+
+            <p>
+                Seek medical advice if you experience persistent fever,
+                ongoing diarrhoea, signs of dehydration, or symptoms
+                that are getting worse. Seek emergency assistance for
+                severe difficulty breathing, confusion, or unconsciousness.
+            </p>
+
+            <p>
+                <strong>Remember:</strong>
+                Prevention starts with small, consistent actions.
+                Clean hands, safe food and water, vaccination, and
+                responsible hygiene habits can help protect you,
+                your family, and your community.
+            </p>
+
+            <h2>Learn More About Disease Prevention</h2>
+
+            <p>
+                Visit the World Health Organization for reliable
+                information about hygiene, sanitation, infectious
+                diseases, and disease prevention.
+            </p>
+
+            <a href="https://www.who.int/health-topics/water-sanitation-and-hygiene-wash" target="_blank"
+                rel="noopener noreferrer">
+                Explore WHO Hygiene and Health Resources
+            </a>
+        </section>
+
+        <section id="Nutrition">
+            <h1>NUTRITION & HEALTHY LIVING</h1>
+            <img src="nutrition(programmes).jpeg" alt="VHA-HANYA Logo" class="nutrition">
+            <p>
+                Nutrition and healthy living involve making healthy food
+                choices, staying physically active, getting enough sleep,
+                and caring for your physical and mental well-being.
+                A balanced diet provides the nutrients your body needs
+                for energy, growth, repair, and protection against illness.
+            </p>
+
+            <h2>Why Is Nutrition Important?</h2>
+
+            <ul>
+                <li>
+                    <strong>Provides energy:</strong>
+                    Healthy foods provide energy for daily activities,
+                    studying, working, and exercising.
+                </li>
+
+                <li>
+                    <strong>Supports growth and development:</strong>
+                    Essential nutrients help the body grow, repair tissues,
+                    and function properly.
+                </li>
+
+                <li>
+                    <strong>Supports the immune system:</strong>
+                    A varied, balanced diet helps the body maintain its
+                    natural defences.
+                </li>
+
+                <li>
+                    <strong>Promotes long-term health:</strong>
+                    Healthy eating habits can help reduce the risk of
+                    certain chronic diseases.
+                </li>
+            </ul>
+
+            <h2>Tips for Healthy Eating</h2>
+
+            <ol>
+                <li>
+                    <strong>Eat a balanced diet:</strong>
+                    Include vegetables, fruits, whole grains, protein-rich
+                    foods, and appropriate amounts of healthy fats.
+                </li>
+
+                <li>
+                    <strong>Eat a variety of foods:</strong>
+                    Different foods provide different vitamins, minerals,
+                    and other essential nutrients.
+                </li>
+
+                <li>
+                    <strong>Drink enough water:</strong>
+                    Choose safe drinking water regularly throughout the day.
+                    Your needs may vary depending on your activity and health.
+                </li>
+
+                <li>
+                    <strong>Limit excess sugar, salt, and unhealthy fats:</strong>
+                    Reduce frequent consumption of sugary drinks and foods
+                    high in salt or saturated and trans fats.
+                </li>
+
+                <li>
+                    <strong>Practise food safety:</strong>
+                    Wash produce with safe water, cook food thoroughly,
+                    and store food at safe temperatures.
+                </li>
+
+                <li>
+                    <strong>Eat regularly according to your needs:</strong>
+                    Choose meals and snacks that help you maintain energy
+                    and meet your nutritional requirements.
+                </li>
+            </ol>
+
+            <h2>Healthy Living Habits</h2>
+
+            <ul>
+                <li>
+                    <strong>Stay physically active:</strong>
+                    Choose activities you enjoy, such as walking, dancing,
+                    cycling, or playing a sport.
+                </li>
+
+                <li>
+                    <strong>Get enough sleep:</strong>
+                    Maintain a regular sleep routine to support concentration,
+                    recovery, and overall health.
+                </li>
+
+                <li>
+                    <strong>Look after your mental health:</strong>
+                    Make time for relaxation, connect with supportive people,
+                    and seek help when you need it.
+                </li>
+
+                <li>
+                    <strong>Avoid smoking and harmful substance use:</strong>
+                    Make choices that protect your long-term health.
+                </li>
+
+                <li>
+                    <strong>Attend health check-ups:</strong>
+                    Follow recommended screening and vaccination guidance
+                    and consult healthcare professionals when needed.
+                </li>
+            </ul>
+
+            <h2>Healthy Eating on a Budget</h2>
+
+            <p>
+                Eating healthily does not have to be expensive. Plan meals
+                ahead, compare prices, buy seasonal produce, and consider
+                affordable foods such as beans, lentils, eggs, oats, and
+                vegetables. Frozen vegetables can also be nutritious options.
+            </p>
+
+            <h2>Building Healthy Habits</h2>
+
+            <p>
+                Healthy living is about consistency, not perfection.
+                Start with small, realistic changes, such as adding a
+                vegetable to a meal, taking a daily walk, drinking water
+                regularly, or establishing a bedtime routine.
+            </p>
+
+            <p>
+                <strong>Remember:</strong>
+                Every person's nutritional needs are different. If you
+                have a medical condition or specific dietary requirements,
+                consult a registered dietitian or healthcare professional
+                for personalised advice.
+            </p>
+
+            <h2>Learn More About Nutrition and Healthy Living</h2>
+
+            <p>
+                Explore the World Health Organization's guidance on healthy
+                diets to learn more about balanced nutrition and healthy
+                lifestyle choices.
+            </p>
+
+            <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet" target="_blank"
+                rel="noopener noreferrer">
+                Explore WHO Healthy Diet Resources
+            </a>
+        </section>
+
+        <section id="Agieng">
+            <h1>ELEDERLY HEALTH AND AGEING</h1>
+            <img src="Elderly Care and Healthy Ageing.jpeg" alt="VHA-HANYA Logo" class="Ageing">
+            <p>
+                Ageing is a natural part of life that brings physical,
+                emotional, and social changes. Elderly health focuses
+                on helping older adults maintain their independence,
+                dignity, safety, and quality of life. With appropriate
+                healthcare, social support, and healthy lifestyle habits,
+                older adults can continue to live meaningful and fulfilling lives.
+            </p>
+
+            <h2>Why Is Elderly Health Important?</h2>
+
+            <ul>
+                <li>
+                    <strong>Promotes independence:</strong>
+                    Appropriate care and support help older adults perform
+                    daily activities and maintain their independence.
+                </li>
+
+                <li>
+                    <strong>Supports physical health:</strong>
+                    Regular check-ups and healthy habits help identify
+                    health concerns early and manage existing conditions.
+                </li>
+
+                <li>
+                    <strong>Protects mental well-being:</strong>
+                    Emotional support, social interaction, and access to
+                    mental healthcare can improve quality of life.
+                </li>
+
+                <li>
+                    <strong>Prevents injuries:</strong>
+                    Reducing fall risks and making homes safer can help
+                    older adults move around with greater confidence.
+                </li>
+
+                <li>
+                    <strong>Promotes dignity and respect:</strong>
+                    Every older person deserves compassionate care,
+                    respect, and the opportunity to make decisions
+                    about their own life.
+                </li>
+            </ul>
+
+            <h2>Healthy Ageing Tips</h2>
+
+            <ol>
+                <li>
+                    <strong>Eat nutritious meals:</strong>
+                    Include a variety of vegetables, fruits, whole grains,
+                    and protein-rich foods to support strength and health.
+                </li>
+
+                <li>
+                    <strong>Stay physically active:</strong>
+                    Engage in suitable activities such as walking,
+                    stretching, or balance exercises according to
+                    your abilities and healthcare advice.
+                </li>
+
+                <li>
+                    <strong>Attend regular health check-ups:</strong>
+                    Monitor blood pressure, vision, hearing, and other
+                    health concerns as recommended by a healthcare
+                    professional.
+                </li>
+
+                <li>
+                    <strong>Use medicines safely:</strong>
+                    Follow prescribed instructions, keep a list of
+                    medicines, and consult a healthcare professional
+                    before changing or stopping medication.
+                </li>
+
+                <li>
+                    <strong>Stay socially connected:</strong>
+                    Spend time with family, friends, community groups,
+                    or activities that help reduce loneliness and isolation.
+                </li>
+
+                <li>
+                    <strong>Protect mental health:</strong>
+                    Make time for enjoyable activities, share concerns
+                    with trusted people, and seek professional help
+                    when experiencing persistent sadness or anxiety.
+                </li>
+
+                <li>
+                    <strong>Get adequate sleep:</strong>
+                    Maintain a regular sleep routine and speak to a
+                    healthcare professional if sleep problems persist.
+                </li>
+            </ol>
+
+            <h2>Preventing Falls and Injuries</h2>
+
+            <p>
+                Falls can cause serious injuries, but some risks can
+                be reduced by keeping walkways clear, improving lighting,
+                installing handrails where needed, using suitable footwear,
+                and having vision and medication concerns reviewed.
+                Mobility aids should be properly fitted and used as advised.
+            </p>
+
+            <h2>Common Health Concerns in Older Adults</h2>
+
+            <ul>
+                <li>High blood pressure and heart disease.</li>
+                <li>Diabetes and other long-term health conditions.</li>
+                <li>Arthritis and reduced mobility.</li>
+                <li>Changes in vision and hearing.</li>
+                <li>Memory difficulties and dementia.</li>
+                <li>Loneliness, anxiety, and depression.</li>
+                <li>Malnutrition and dehydration.</li>
+            </ul>
+
+            <p>
+                Experiencing a health concern is not an inevitable part
+                of ageing. New, persistent, or worsening symptoms should
+                be discussed with a healthcare professional.
+            </p>
+
+            <h2>Supporting Older Adults</h2>
+
+            <p>
+                Families, caregivers, and communities can support older
+                adults by listening to their needs, helping them access
+                healthcare, respecting their choices, maintaining social
+                connections, and protecting them from neglect, abuse,
+                and exploitation.
+            </p>
+
+            <p>
+                <strong>Remember:</strong>
+                Ageing should be accompanied by dignity, respect,
+                and appropriate support. Small acts of care can make
+                a meaningful difference in an older person's life.
+            </p>
+
+            <h2>Learn More About Healthy Ageing</h2>
+
+            <p>
+                Visit the World Health Organization for information
+                about healthy ageing, age-friendly communities, and
+                the health needs of older people.
+            </p>
+
+            <a href="https://www.who.int/health-topics/ageing" target="_blank" rel="noopener noreferrer">
+                Explore WHO Healthy Ageing Resources
+            </a>
+        </section>
+
+        <section id="Maternal">
+            <h1>MATERNAL & CHILD HEALTH</h1>
+            <img src="pregnant (programmes).jpeg" alt="VHA-HANYA Logo" class="Maternal">
+            <p>
+                Mental and child health focuses on supporting children's
+                physical, emotional, social, and psychological development.
+                A healthy childhood provides the foundation for learning,
+                building relationships, and enjoying a better quality of life.
+                Children need proper nutrition, healthcare, protection,
+                emotional support, and a safe environment to grow and thrive.
+            </p>
+
+            <h2>Why Are Mental and Child Health Important?</h2>
+
+            <ul>
+                <li>
+                    <strong>Supports healthy development:</strong>
+                    Regular healthcare, nutritious food, and a safe
+                    environment help children grow and develop.
+                </li>
+
+                <li>
+                    <strong>Promotes emotional well-being:</strong>
+                    Children need love, understanding, and support to
+                    express their feelings and develop healthy relationships.
+                </li>
+
+                <li>
+                    <strong>Encourages early intervention:</strong>
+                    Identifying developmental, emotional, or behavioural
+                    concerns early can help children receive appropriate support.
+                </li>
+
+                <li>
+                    <strong>Prevents illness:</strong>
+                    Immunisation, good hygiene, and regular health visits
+                    help protect children from preventable diseases.
+                </li>
+
+                <li>
+                    <strong>Protects children:</strong>
+                    Every child deserves safety, dignity, care, and
+                    protection from abuse, neglect, and violence.
+                </li>
+            </ul>
+
+            <h2>Promoting Children's Mental Health</h2>
+
+            <ol>
+                <li>
+                    <strong>Encourage open communication:</strong>
+                    Create a safe space where children can talk about
+                    their feelings without fear of judgement.
+                </li>
+
+                <li>
+                    <strong>Provide love and emotional support:</strong>
+                    Listen to children, reassure them, and acknowledge
+                    their emotions.
+                </li>
+
+                <li>
+                    <strong>Encourage play and social interaction:</strong>
+                    Play, hobbies, and positive friendships support
+                    emotional and social development.
+                </li>
+
+                <li>
+                    <strong>Maintain healthy routines:</strong>
+                    Encourage sufficient sleep, physical activity,
+                    balanced meals, and time to relax.
+                </li>
+
+                <li>
+                    <strong>Recognise warning signs:</strong>
+                    Persistent sadness, withdrawal, intense fears,
+                    major behavioural changes, or difficulties at school
+                    may indicate that a child needs additional support.
+                </li>
+
+                <li>
+                    <strong>Seek professional help:</strong>
+                    Consult a healthcare professional, counsellor,
+                    psychologist, or other qualified provider when
+                    emotional or behavioural concerns persist.
+                </li>
+            </ol>
+
+            <h2>Essential Child Health Practices</h2>
+
+            <ul>
+                <li>
+                    <strong>Balanced nutrition:</strong>
+                    Provide age-appropriate, nutritious meals that
+                    support growth and development.
+                </li>
+
+                <li>
+                    <strong>Immunisation:</strong>
+                    Follow South Africa's recommended childhood
+                    immunisation schedule and attend clinic appointments.
+                </li>
+
+                <li>
+                    <strong>Personal hygiene:</strong>
+                    Teach children to wash their hands with soap,
+                    brush their teeth, and practise good hygiene.
+                </li>
+
+                <li>
+                    <strong>Growth and development monitoring:</strong>
+                    Attend child health visits to monitor growth,
+                    development, hearing, vision, and other health needs.
+                </li>
+
+                <li>
+                    <strong>Safe environments:</strong>
+                    Keep medicines, cleaning products, sharp objects,
+                    and other dangerous items out of children's reach.
+                    Use appropriate car seats and supervise young children
+                    around water.
+                </li>
+
+                <li>
+                    <strong>Protection from abuse:</strong>
+                    Teach children about personal boundaries and
+                    encourage them to speak to a trusted adult if
+                    someone makes them feel unsafe.
+                </li>
+            </ul>
+
+            <h2>When Should Parents or Caregivers Seek Help?</h2>
+
+            <p>
+                Seek medical advice if a child has persistent symptoms,
+                feeding difficulties, concerns about growth or development,
+                or significant changes in mood or behaviour.
+            </p>
+
+            <p>
+                Seek urgent medical assistance if a child has severe
+                difficulty breathing, becomes unresponsive, experiences
+                a seizure for the first time, or develops other serious
+                symptoms. Follow emergency medical guidance.
+            </p>
+
+            <h2>Supporting Parents and Caregivers</h2>
+
+            <p>
+                Caring for a child can be rewarding, but it can also be
+                challenging. Parents and caregivers should seek support
+                when they feel overwhelmed. Families, schools, clinics,
+                and communities can work together to promote children's
+                physical health, emotional well-being, and safety.
+            </p>
+
+            <p>
+                <strong>Remember:</strong>
+                Every child deserves to feel safe, loved, heard, and
+                supported. Caring for a child's mental health is just
+                as important as caring for their physical health.
+            </p>
+
+            <h2>Learn More About Mental and Child Health</h2>
+
+            <p>
+                Visit the World Health Organization for reliable
+                information about child health, development, and
+                mental well-being.
+            </p>
+
+            <a href="https://www.who.int/health-topics/child-health" target="_blank" rel="noopener noreferrer">
+                Explore WHO Child Health Resources
+            </a>
+
+            <br><br>
+
+            <a href="https://www.sadag.org/" target="_blank" rel="noopener noreferrer">
+                Visit SADAG for Mental Health Support
+            </a>
+        </section>
+
+        <section id="Chronic">
+            <h1>CHRONIC DISEASE CARE</h1>
+            <img src="chronic illness(programmes).jpeg" alt="VHA-HANYA Logo" class="chronic">
+            <p>
+                Chronic diseases are long-term health conditions that
+                often require ongoing medical care, monitoring, and
+                lifestyle management. Examples include diabetes,
+                high blood pressure, heart disease, asthma, and chronic
+                respiratory diseases. With appropriate treatment and
+                healthy lifestyle choices, many people can manage
+                these conditions and improve their quality of life.
+            </p>
+
+            <h2>Why Is Chronic Disease Care Important?</h2>
+
+            <ul>
+                <li>
+                    <strong>Prevents complications:</strong>
+                    Regular monitoring and appropriate treatment can
+                    reduce the risk of serious health complications.
+                </li>
+
+                <li>
+                    <strong>Improves quality of life:</strong>
+                    Managing symptoms can help people continue with
+                    their daily activities.
+                </li>
+
+                <li>
+                    <strong>Supports early detection:</strong>
+                    Health screenings can identify certain conditions
+                    before serious complications develop.
+                </li>
+
+                <li>
+                    <strong>Encourages healthy living:</strong>
+                    Balanced nutrition, physical activity, and other
+                    healthy habits can support long-term health.
+                </li>
+            </ul>
+
+            <h2>Common Chronic Diseases</h2>
+
+            <ul>
+                <li>
+                    <strong>Diabetes:</strong>
+                    A condition that affects how the body regulates
+                    blood glucose. Management may include healthy eating,
+                    monitoring glucose levels, and prescribed medication.
+                </li>
+
+                <li>
+                    <strong>High Blood Pressure:</strong>
+                    Also called hypertension, this condition can increase
+                    the risk of heart disease, stroke, and kidney problems.
+                    Regular blood pressure checks are important.
+                </li>
+
+                <li>
+                    <strong>Heart Disease:</strong>
+                    Conditions affecting the heart that may require
+                    medication, lifestyle changes, and ongoing medical care.
+                </li>
+
+                <li>
+                    <strong>Asthma:</strong>
+                    A long-term respiratory condition that can cause
+                    wheezing, coughing, chest tightness, and difficulty
+                    breathing. Following an individual treatment plan
+                    can help control symptoms.
+                </li>
+
+                <li>
+                    <strong>Chronic Respiratory Diseases:</strong>
+                    Long-term lung conditions that may affect breathing
+                    and require medical assessment and management.
+                </li>
+            </ul>
+
+            <h2>Tips for Managing Chronic Diseases</h2>
+
+            <ol>
+                <li>
+                    <strong>Attend regular check-ups:</strong>
+                    Visit your clinic or healthcare professional for
+                    monitoring, screening, and treatment reviews.
+                </li>
+
+                <li>
+                    <strong>Take medication as prescribed:</strong>
+                    Follow your treatment instructions and consult a
+                    healthcare professional before changing or stopping
+                    any prescribed medicine.
+                </li>
+
+                <li>
+                    <strong>Eat a balanced diet:</strong>
+                    Include a variety of vegetables, fruits, whole grains,
+                    and suitable protein sources. Follow personalised
+                    dietary advice if needed.
+                </li>
+
+                <li>
+                    <strong>Stay physically active:</strong>
+                    Choose safe activities appropriate for your abilities
+                    and medical condition.
+                </li>
+
+                <li>
+                    <strong>Avoid smoking:</strong>
+                    Avoid tobacco and seek support if you need help
+                    stopping smoking.
+                </li>
+
+                <li>
+                    <strong>Monitor your condition:</strong>
+                    If advised by your healthcare professional, keep
+                    records of measurements such as blood pressure or
+                    blood glucose.
+                </li>
+
+                <li>
+                    <strong>Look after your mental health:</strong>
+                    Managing a long-term condition can be stressful.
+                    Reach out to trusted people or a healthcare
+                    professional for emotional support.
+                </li>
+            </ol>
+
+            <h2>Understanding Medication Safety</h2>
+
+            <p>
+                Always use medicines according to the instructions
+                provided by your healthcare professional. Keep track
+                of your medicines, tell your healthcare team about
+                other medicines or supplements you use, and ask questions
+                if you experience side effects or have concerns.
+                Do not share prescription medicines with other people.
+            </p>
+
+            <h2>When Should You Seek Medical Help?</h2>
+
+            <p>
+                Contact a healthcare professional if your symptoms
+                worsen, your medication causes concerning side effects,
+                or you are struggling to manage your condition.
+            </p>
+
+            <p>
+                Seek emergency assistance for severe chest pain,
+                sudden weakness on one side of the body, difficulty
+                speaking, or severe difficulty breathing.
+            </p>
+
+            <h2>Prevention and Early Detection</h2>
+
+            <p>
+                Not all chronic diseases can be prevented, but healthy
+                lifestyle choices, recommended health screenings,
+                avoiding tobacco, and managing risk factors can help
+                reduce the risk of some conditions and their complications.
+            </p>
+
+            <p>
+                <strong>Remember:</strong>
+                Chronic disease management is an ongoing journey.
+                Following a treatment plan, attending check-ups, and
+                asking for support can help you take control of your health.
+            </p>
+
+            <h2>Learn More About Chronic Disease Care</h2>
+
+            <p>
+                Visit the World Health Organization for reliable
+                information about noncommunicable diseases, prevention,
+                and long-term health management.
+            </p>
+
+            <a href="https://www.who.int/health-topics/noncommunicable-diseases" target="_blank"
+                rel="noopener noreferrer">
+                Explore WHO Chronic Disease Resources
+            </a>
+        </section>
+
+        <section id="Hiv">
+            <h1>HIV & SEXUAL HEALTH</h1>
+            <p>
+                HIV (Human Immunodeficiency Virus) affects the immune
+                system and can make it harder for the body to fight
+                infections if left untreated. Sexual health involves
+                physical, emotional, and social well-being in relation
+                to sexuality. Access to accurate information, testing,
+                prevention, and treatment helps people make informed
+                decisions and protect their health.
+            </p>
+
+            <h2>Understanding HIV</h2>
+
+            <p>
+                HIV can be transmitted through certain body fluids,
+                including blood, semen, vaginal fluids, rectal fluids,
+                and breast milk. It is commonly transmitted through
+                condomless sex when effective prevention measures are
+                not used, sharing needles or injecting equipment, and
+                from a parent to a child during pregnancy, childbirth,
+                or breastfeeding.
+            </p>
+
+            <p>
+                HIV is NOT transmitted through hugging, handshakes,
+                sharing food, using the same toilet, or ordinary
+                everyday contact.
+            </p>
+
+            <h2>HIV Prevention</h2>
+
+            <ul>
+                <li>
+                    <strong>Use condoms:</strong>
+                    Correct and consistent use of condoms reduces the
+                    risk of HIV and many other sexually transmitted
+                    infections (STIs).
+                </li>
+
+                <li>
+                    <strong>Consider PrEP:</strong>
+                    Pre-exposure prophylaxis (PrEP) is medication
+                    taken by HIV-negative people to help prevent HIV.
+                    Consult a healthcare professional to determine
+                    whether it is suitable for you.
+                </li>
+
+                <li>
+                    <strong>Know about PEP:</strong>
+                    Post-exposure prophylaxis (PEP) may prevent HIV
+                    after a possible exposure. It must be started as
+                    soon as possible, ideally within 24 hours and no
+                    later than 72 hours.
+                </li>
+
+                <li>
+                    <strong>Do not share needles:</strong>
+                    Use sterile injecting equipment and never share
+                    needles or other equipment that may contain blood.
+                </li>
+
+                <li>
+                    <strong>Get tested:</strong>
+                    HIV testing helps you understand your status and
+                    access appropriate prevention or treatment.
+                </li>
+            </ul>
+
+            <h2>HIV Testing and Treatment</h2>
+
+            <p>
+                Knowing your HIV status is an important step towards
+                protecting your health. HIV tests are available at
+                many clinics and healthcare facilities. A healthcare
+                professional can explain the testing window period
+                and advise whether repeat testing is needed.
+            </p>
+
+            <p>
+                Although there is currently no widely available cure
+                for HIV, antiretroviral therapy (ART) can control the
+                virus and help people live long, healthy lives.
+                Taking treatment as prescribed is essential.
+            </p>
+
+            <p>
+                People living with HIV who maintain an undetectable
+                viral load through effective treatment do not transmit
+                HIV sexually. This is known as Undetectable =
+                Untransmittable (U=U).
+            </p>
+
+            <h2>Sexual Health and STI Prevention</h2>
+
+            <ul>
+                <li>
+                    <strong>Practise safer sex:</strong>
+                    Use condoms and discuss sexual health with your
+                    partner in a respectful and supportive way.
+                </li>
+
+                <li>
+                    <strong>Get screened for STIs:</strong>
+                    Some sexually transmitted infections have no
+                    noticeable symptoms. Testing can help identify
+                    infections early.
+                </li>
+
+                <li>
+                    <strong>Consider vaccination:</strong>
+                    Ask a healthcare professional about vaccines
+                    that help protect against infections such as
+                    hepatitis B and human papillomavirus (HPV).
+                </li>
+
+                <li>
+                    <strong>Respect consent:</strong>
+                    Sexual activity must be voluntary. Everyone has
+                    the right to set boundaries and say no.
+                </li>
+
+                <li>
+                    <strong>Seek medical care:</strong>
+                    Speak to a healthcare professional if you notice
+                    unusual discharge, sores, pain when urinating,
+                    or other possible STI symptoms.
+                </li>
+            </ul>
+
+            <h2>Fighting HIV Stigma and Discrimination</h2>
+
+            <p>
+                Everyone deserves dignity, privacy, and access to
+                healthcare regardless of their HIV status. HIV cannot
+                be identified by someone's appearance. Avoid judgement,
+                respect confidentiality, and support people living
+                with HIV with kindness and understanding.
+            </p>
+
+            <h2>When Should You Seek Help?</h2>
+
+            <p>
+                If you think you may have been exposed to HIV within
+                the past 72 hours, seek medical care immediately to
+                ask about PEP. Do not wait for symptoms to appear.
+            </p>
+
+            <p>
+                Visit a clinic or healthcare professional for HIV
+                testing, STI screening, contraception advice, or
+                questions about sexual and reproductive health.
+            </p>
+
+            <p>
+                <strong>Remember:</strong>
+                Knowing your status, accessing prevention, and
+                receiving treatment are important steps towards
+                protecting your health. HIV is a manageable condition,
+                and everyone deserves respectful, stigma-free care.
+            </p>
+
+            <h2>Learn More About HIV and Sexual Health</h2>
+
+            <p>
+                Visit these trusted organisations for accurate
+                information, testing guidance, and support.
+            </p>
+
+            <ul>
+                <li>
+                    <a href="https://www.who.int/health-topics/hiv-aids" target="_blank" rel="noopener noreferrer">
+                        World Health Organization – HIV Information
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.sahpra.org.za/" target="_blank" rel="noopener noreferrer">
+                        SAHPRA – Medicines and Health Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.sadag.org/" target="_blank" rel="noopener noreferrer">
+                        SADAG – Mental Health Support
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Immunisation">
+            <h1>IMMUNISATION AND VACCINATION</h1>
+            <img src="Immunization and vaccination.jpeg" alt="VHA-HANYA Logo" class="Immunisation">
+            <p>
+                Immunisation is the process of developing protection
+                against infectious diseases, usually through vaccination.
+                Vaccines train the immune system to recognise and fight
+                specific germs, helping prevent serious illnesses,
+                complications, and deaths. Vaccination protects individuals
+                and helps reduce the spread of certain diseases within
+                communities.
+            </p>
+
+            <h2>Why Is Vaccination Important?</h2>
+
+            <ul>
+                <li>
+                    <strong>Prevents serious diseases:</strong>
+                    Vaccines protect against diseases such as measles,
+                    polio, hepatitis B, and certain types of pneumonia.
+                </li>
+
+                <li>
+                    <strong>Protects children:</strong>
+                    Childhood vaccinations help protect babies and
+                    children during important stages of growth and development.
+                </li>
+
+                <li>
+                    <strong>Protects vulnerable people:</strong>
+                    Vaccination helps reduce the spread of certain
+                    infections to people who are more likely to become
+                    seriously ill.
+                </li>
+
+                <li>
+                    <strong>Reduces complications:</strong>
+                    Vaccines can lower the risk of severe illness,
+                    hospitalisation, and death from vaccine-preventable
+                    diseases.
+                </li>
+
+                <li>
+                    <strong>Supports community health:</strong>
+                    High vaccination coverage can help limit outbreaks
+                    of certain infectious diseases.
+                </li>
+            </ul>
+
+            <h2>How Do Vaccines Work?</h2>
+
+            <p>
+                Vaccines help the immune system recognise a particular
+                infection without requiring a person to experience the
+                disease itself. The immune system can then respond more
+                effectively if it encounters that germ in the future.
+                Some vaccines require more than one dose or booster
+                doses to provide the recommended protection.
+            </p>
+
+            <h2>Common Types of Vaccination</h2>
+
+            <ul>
+                <li>
+                    <strong>Childhood vaccinations:</strong>
+                    Protect babies and children against infections
+                    such as measles, polio, tuberculosis, and hepatitis B,
+                    according to the recommended schedule.
+                </li>
+
+                <li>
+                    <strong>Adolescent vaccinations:</strong>
+                    Vaccines such as HPV help protect against certain
+                    infections and related cancers.
+                </li>
+
+                <li>
+                    <strong>Adult vaccinations:</strong>
+                    Adults may need vaccines or booster doses depending
+                    on their age, health, occupation, travel, and
+                    vaccination history.
+                </li>
+
+                <li>
+                    <strong>Vaccination during pregnancy:</strong>
+                    Certain vaccines are recommended during pregnancy
+                    to protect the pregnant person and baby. Ask a
+                    healthcare professional which vaccines are appropriate.
+                </li>
+
+                <li>
+                    <strong>Travel vaccinations:</strong>
+                    Some destinations require or recommend specific
+                    vaccines. Seek advice before travelling.
+                </li>
+            </ul>
+
+            <h2>Tips for Staying Up to Date</h2>
+
+            <ol>
+                <li>
+                    Keep your vaccination card or immunisation record
+                    in a safe place.
+                </li>
+
+                <li>
+                    Follow South Africa's recommended immunisation
+                    schedule for children and adults.
+                </li>
+
+                <li>
+                    Attend clinic appointments at the recommended times.
+                </li>
+
+                <li>
+                    Ask a healthcare professional about missed doses
+                    or catch-up vaccinations.
+                </li>
+
+                <li>
+                    Tell your healthcare provider about severe allergic
+                    reactions or previous serious vaccine reactions.
+                </li>
+
+                <li>
+                    Ask about expected side effects and when to seek
+                    medical assistance.
+                </li>
+            </ol>
+
+            <h2>Are Vaccines Safe?</h2>
+
+            <p>
+                Vaccines undergo testing and regulatory review before
+                approval, and their safety continues to be monitored.
+                Like other medicines, vaccines can cause side effects.
+                Common effects include temporary soreness at the injection
+                site, mild fever, or tiredness. Serious reactions are rare,
+                but urgent medical attention is necessary if someone
+                develops signs of a severe allergic reaction, such as
+                difficulty breathing or swelling of the throat.
+            </p>
+
+            <h2>Common Vaccine Myths</h2>
+
+            <ul>
+                <li>
+                    <strong>Myth:</strong> Vaccines are unnecessary if
+                    a person feels healthy.
+                    <br>
+                    <strong>Fact:</strong> Vaccines help prevent infections
+                    before exposure and reduce the risk of certain
+                    serious complications.
+                </li>
+
+                <li>
+                    <strong>Myth:</strong> Natural infection is always
+                    safer than vaccination.
+                    <br>
+                    <strong>Fact:</strong> Some infections can cause
+                    serious complications, while vaccination helps
+                    build protection without requiring the person to
+                    experience the disease itself.
+                </li>
+
+                <li>
+                    <strong>Myth:</strong> One vaccine protects against
+                    every infectious disease.
+                    <br>
+                    <strong>Fact:</strong> Each vaccine protects against
+                    particular infections, and different vaccines may
+                    be needed at different stages of life.
+                </li>
+            </ul>
+
+            <h2>Where Can You Get Vaccinated?</h2>
+
+            <p>
+                In South Africa, public clinics and other authorised
+                healthcare facilities provide vaccinations according
+                to national guidelines and availability. Contact your
+                local clinic to confirm which vaccines you need and
+                whether an appointment is required.
+            </p>
+
+            <p>
+                <strong>Remember:</strong>
+                Vaccination is an important part of preventive healthcare.
+                Keep your immunisation records up to date and consult
+                a qualified healthcare professional if you have questions
+                about which vaccines are suitable for you or your family.
+            </p>
+
+            <h2>Learn More About Immunisation</h2>
+
+            <p>
+                Visit these trusted health organisations for reliable
+                information about vaccines and immunisation.
+            </p>
+
+            <ul>
+                <li>
+                    <a href="https://www.who.int/health-topics/vaccines-and-immunization" target="_blank"
+                        rel="noopener noreferrer">
+                        World Health Organization – Vaccines and Immunisation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.health.gov.za/" target="_blank" rel="noopener noreferrer">
+                        South African National Department of Health
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.sahpra.org.za/" target="_blank" rel="noopener noreferrer">
+                        SAHPRA – Medicines and Vaccine Regulation
+                    </a>
+                </li>
+            </ul>
+        </section>
 
 
     </main>
@@ -210,7 +1459,18 @@
         <p> 2026 VHA-HANYA. All rights reserved.</p>
     </footer>
 
+ <script>
+    // Automatically show whichever section matches the URL hash, or default to #MentalHealth
+    const hash = window.location.hash || '#MentalHealth';
+    if(document.querySelector(hash)) document.querySelector(hash).style.display = 'block';
 
+    // Listen for clicks on the sub-nav links to switch views instantly
+    document.querySelectorAll('.topic-nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            setTimeout(() => { location.reload(); }, 10); // Refreshes state cleanly to target hash
+        });
+    });
+</script>   
 </body>
 
 </html>

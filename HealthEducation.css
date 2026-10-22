@@ -1,0 +1,249 @@
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(39, 42, 40);
+}
+
+body {
+    margin: 0;
+    background-color: #8a9889;  /* cream page background */
+    color: #082114;              /* default text colour */
+    min-height: 100vh;
+}
+/* Keep the topic navigation visible */
+
+/* Keep the Education banner and topic navigation visible */
+main section#Education {
+    display: block;
+}
+
+/* Hide all health topic sections by default */
+main section:not(#Education) {
+    display: none;
+}
+
+/* Show Mental Health when the page first loads */
+main section#MentalHealth {
+    display: block;
+}
+
+/* Show the topic selected in the navigation */
+main section:not(#Education):target {
+    display: block;
+}
+
+/* Hide Mental Health when another topic is selected */
+main:has(section:not(#MentalHealth):not(#Education):target)
+section#MentalHealth {
+    display: none;
+}
+
+
+/* Highlight the active tab in navigation */
+.topic-nav a:focus, 
+.topic-nav a:active {
+    color: #e5f7d3 !important;
+    font-weight: bold;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Highlight the active tab in navigation */
+.topic-nav a:focus, 
+.topic-nav a:active {
+    color: #e5f7d3 !important;
+    font-weight: bold;
+}
+
+
+.main-nav a {
+    margin: 0 30px;
+    color: rgb(148, 174, 159);
+    text-decoration: none;
+}
+
+.programmes-hero {
+    background: linear-gradient(135deg, #405246, #586e59);
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 40px 30px;
+    box-sizing: border-box;
+}
+.topic-nav a{
+   margin: 0 15px;
+    color: rgb(183, 192, 114);
+    text-decoration: none;
+    font-size: smaller;
+}
+.programmes-hero,
+.programmes-hero .eyebrow { margin-top: 0; }
+
+.programmes-hero { padding-top: 24px; }
+
+
+#Education {
+    min-height: 0;   /* removes the forced 500px height */
+    padding: 0;
+    background-color: #c4c2b7;
+    
+}
+#Education p{
+    color: #082114;
+}
+.pic {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+footer{
+    text-align: center;
+    padding:20px;
+    color:rgb(61, 97, 32);
+    background-color: rgb(39,42,40)
+}
+footer h2,p{
+    color:rgb(148, 174, 159)
+}
+html{
+    scroll-behavior: smooth;
+}
+section {
+    min-height: 500px;
+    padding: 40px;
+    text-align: center;
+}
+
+
+p:not(footer p) {
+    color: #233327;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.brain {
+     width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    border: 5px solid rgb(19, 77, 85);
+}
+
+.Medication {
+     width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    border: 5px solid rgb(19, 77, 85);
+}
+
+.aid {
+     width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    border: 5px solid rgb(19, 77, 85);
+}
+
+.Hygiene {
+     width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    border: 5px solid rgb(19, 77, 85);
+}
+.nutrition {
+     width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    border: 5px solid rgb(19, 77, 85);
+}
+.Ageing {
+     width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    border: 5px solid rgb(19, 77, 85);
+}
+.Maternal {
+     width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    border: 5px solid rgb(19, 77, 85);
+}
+.chronic {
+     width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    border: 5px solid rgb(19, 77, 85);
+}
+.Immunisation {
+     width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: white;
+    border: 5px solid rgb(19, 77, 85);
+}
