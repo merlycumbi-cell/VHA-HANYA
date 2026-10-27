@@ -2,6 +2,11 @@ header {
     text-align: center;
     padding: 20px;
     background-color: rgb(39, 42, 40);
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 body {
@@ -10,9 +15,12 @@ body {
     color: #082114;              /* default text colour */
     min-height: 100vh;
 }
-/* Keep the topic navigation visible */
-
-/* Keep the Education banner and topic navigation visible */
+body h1{
+    color: #233327;
+}
+body p{
+    color: #e5f7d3;
+}
 main section#Education {
     display: block;
 }
